@@ -1,0 +1,70 @@
+nav {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000000c7;
+}
+.Nav-links {
+  margin: 0;
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.brand-name a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  font-size: xx-large;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: larger;
+  font-weight: 800;
+}
+
+/* Add this to your existing Nav.css file */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1; /* Change as needed */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black; /* Change as needed */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* Change as needed */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
